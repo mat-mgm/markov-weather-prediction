@@ -12,7 +12,15 @@ The analysis shows how quickly the simulated distribution converges to the empir
 
 ## Results
 
-Error heatmaps across 12 iteration scales are in `error_heatmaps/`. The Frobenius norm drops sharply between 250 and 2,500 iterations and stabilises beyond 25,000.
+The Frobenius norm drops sharply between 250 and 2,500 iterations and stabilises beyond 25,000.
+
+**Transition graph** (conditional probabilities from real data):
+
+![Transition graph](figures/transition_graph.svg)
+
+**Error heatmaps** (simulated vs. real transition matrix, 25 → 100,000 iterations):
+
+![Error heatmaps](figures/error_heatmaps.png)
 
 ## Running it
 
@@ -38,6 +46,5 @@ jupyter notebook project.ipynb
 |------|-------------|
 | `project.ipynb` | Main notebook — data loading, transition matrix, simulation, analysis |
 | `pm_project.nix` | Reproducible Nix dev shell (Python 3.13 + Jupyter) |
-| `error_heatmaps/` | Pre-generated heatmap plots for each iteration scale |
-| `images/` | Transition graph rendered as a Mermaid diagram |
+| `figures/` | Output plots: transition graph (SVG), Mermaid diagram, error heatmaps |
 | `Project_Report_PM.pdf` | Written report |
