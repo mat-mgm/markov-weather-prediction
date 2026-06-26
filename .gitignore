@@ -1,0 +1,26 @@
+# Virtual environment
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Private API exploration (not part of the project)
+meteocat_api/
+
+# Assignment sheet and interim report drafts
+Final\ (Mini)\ Projects\ PM.pdf
+report/
+
+# Scratch datasets and intermediate pipeline scripts
+dataset/
+
+# Archives
+*.zip
+
+# Graphviz intermediate
+*.gv
+*.gv.pdf
